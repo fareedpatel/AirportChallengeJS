@@ -1,0 +1,15 @@
+'use strict';
+
+describe('Plane', function(){
+	var plane;
+	beforeEach(function(){
+		plane = new Plane();
+	});
+	it('can land at an airport', function(){
+		expect(plane.land).not.toBeUndefined()
+	});
+	it('can land at an airport', function(){
+		plane.land(airport);
+		expect(airport.clearForLanding).toHaveBeenCalledWith(plane);
+	});
+});
