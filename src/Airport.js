@@ -13,3 +13,6 @@ Airport.prototype.clearForLanding = function(plane){
 Airport.prototype.clearForTakeoff = function(plane){
   this._hangar = [];
 };
+Airport.prototype.isStormy = function() {
+	return false;
+};
